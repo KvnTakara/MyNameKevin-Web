@@ -1,0 +1,76 @@
+
+h1 {
+    color: #000;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+h2 {
+    color: #000;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+h3 {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+.banner-map {
+    background-image: url(https://publish-01.obsidian.md/access/186a0d1b800fa85e50d49cb464898e4c/assets/neverwinter-castle_never.png);
+    background-position: 30% 50%;
+    background-size: cover;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 78% 2% 20%;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    top: 500px;
+    background-color: rgb(255, 235, 205, 0.8); 
+    padding: 0 0 5% 0;
+}
+
+.text-container {
+    margin: 20px 5% 0 5%;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    top: 500px;
+    background-color: rgb(255, 235, 205, 0.8); 
+}
+
+.info {
+    padding: 0 0 5% 0;
+    margin: 20px 5% 0 5%;
+}
+
+.info h2 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.info h3 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+@media(max-width: 768px){
+    .banner-map {
+        padding: 5%;
+        grid-template-columns: 1fr;
+    }
+}

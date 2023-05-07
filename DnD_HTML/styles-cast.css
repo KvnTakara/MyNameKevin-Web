@@ -1,0 +1,124 @@
+.cast-container {
+    margin: 0 7% 0 7%;
+}
+
+.cast-content {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    transition: .2s;
+    background-color: #fff;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.cast {
+    margin-left: 5%;
+    width: 470px;
+    height: 100%;
+    scale: 1.025;
+    background-size: 352px;
+    background-position: 50% 0%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cast-content:hover {
+    transition: .2s;
+    transform: scale(1.05);
+}
+
+.cast-box {
+    width: 100%;
+    height: 100%;
+    text-justify: distribute;
+}
+
+.cast-box h3 {
+    margin: 10% 0 0 5%;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.cast-box h1 {
+    margin: 0 0 0 5%;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.cast-box h2 {
+    margin: 3% 7% 5% 7%;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+/*#region COLOR-BOX*/
+.color-bard {
+    background-color: #4b160f;
+}
+
+.color-barbarian {
+    background-color: #331349;
+}
+
+.color-paladin {
+    background-color: #121b46;
+}
+
+.color-druid {
+    background-color: #3c4b11;
+}
+
+.color-rogue {
+    background-color: #4d3512;
+}
+
+.color-sorcerer {
+    background-color: #11473e;
+}
+
+.color-wizard {
+    background-color: #420f0f;
+}
+/*#endregion COLOR-BOX*/
+
+/*#region CAST-IMG*/
+.img-1 {
+    background-image: url(https://thathashtagshow.com/wp-content/uploads/2023/03/dndinthonlinecharacterbard1shtoptimised-768x1139.jpg);
+}
+
+.img-2 {
+    background-image: url(https://thathashtagshow.com/wp-content/uploads/2023/03/dndinthonlinecharacterbarbarian1shtoptimised-768x1139.jpg);
+}
+
+.img-3 {
+    background-image: url(https://thathashtagshow.com/wp-content/uploads/2023/03/dndinthonlinecharacterpaladin1shtoptimised-768x1139.jpg);
+}
+
+.img-4 {
+    background-image: url(https://thathashtagshow.com/wp-content/uploads/2023/03/dndinthonlinecharacterdruid1shtoptimised-768x1139.jpg);
+}
+
+.img-5 {
+    background-image: url(https://thathashtagshow.com/wp-content/uploads/2023/03/dndinthonlinecharacterrouge1shtoptimised-768x1139.jpg);
+}
+
+.img-6 {
+    background-image: url(https://thathashtagshow.com/wp-content/uploads/2023/03/dndinthonlinecharactersorcerer1shtoptimised-768x1139.jpg);
+}
+
+.img-7 {
+    background-image: url(https://thathashtagshow.com/wp-content/uploads/2023/03/dndinthonlinecharacterwizard1shtoptimised-768x1139.jpg);
+}
+/*#endregion CAST-IMG*/
+
+@media(max-width: 768px){
+    .cast {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .cast-box h2 {
+        font-size: 18px;
+    }
+}
