@@ -7,90 +7,213 @@
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./home.css" />
     <script src="https://kit.fontawesome.com/6172394bf5.js" crossorigin="anonymous"></script>
+    <script defer src="./home.js"></script>
     <title>Kevin Takara | Dev</title>
 </head>
 
 <body>
-<header id="header">
-    <nav class="ali-center-jst-end padding-right">
-        <a id="logo" href="https://www.linkedin.com/in/kevin-eiki-takara/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl color-theme_0 pointer"></i></a>
-        <a id="logo" href="https://github.com/KvnTakara" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github fa-2xl color-theme_0 pointer"></i></a>
-        <a id="logo" href="" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-youtube fa-2xl color-theme_0 pointer"></i></a>
-        <a id="logo" href="https://drive.google.com/file/d/1LxZAmzHHAl9aYQypLv8qgyMkn-GT5fE1/view?usp=sharing" rel="noopener noreferrer" target="_blank"><i class="fa-sharp fa-solid fa-file fa-2xl color-theme_0 pointer"></i></a>
+<header>
+    <nav class="center-end pdd-right">
+        <a id="logo" href="https://www.linkedin.com/in/kevin-eiki-takara/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl font-theme pointer"></i></a>
+        <a id="logo" href="https://github.com/KvnTakara" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github fa-2xl font-theme pointer"></i></a>
+        <a id="logo" href="https://drive.google.com/file/d/1LxZAmzHHAl9aYQypLv8qgyMkn-GT5fE1/view?usp=sharing" rel="noopener noreferrer" target="_blank"><i class="fa-sharp fa-solid fa-file fa-2xl font-theme pointer"></i></a>
+        <a id="logo" href="" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-bars fa-2xl font-theme pointer"></i></a>
     </nav>
 </header>
 
-<div id="front-page" class="ali-jst-center background-gray">
+<div id="front-page" class="center bg-gray">
     <div id="front-page-nav" class="flex-column">
-        <h1 style="font-size: 60px;">Hi, I'm <span class="color-theme_0"> Kevin. </span> <br> <span style="font-size: 50px;">3D Generalist & Front-End Web Developer Jr.</span> </h1>
+        <h1 style="font-size: 60px;">Hi, I'm <span class="font-theme"> Kevin. </span> <br> <span style="font-size: 50px;">3D Generalist & Front-End Web Developer Jr.</span> </h1>
         <div>
-            <a id="ancor-border" class="pointer" style="font-size: 20px;" href="#skills-page">Skills</a>
-            <a id="ancor-border" class="pointer" style="font-size: 20px;" href="#project-page">Projects</a>
-            <a id="ancor-border" class="pointer" style="font-size: 20px;" href="#about-page">About</a>
-            <a id="ancor-border" class="pointer" style="font-size: 20px;" href="#contact-page">Contact</a>
+            <a id="ancor-border" href="#skills-page">Skills</a>
+            <a id="ancor-border" href="#project-page">Projects</a>
+            <a id="ancor-border" href="#about-page">About</a>
+            <a id="ancor-border" href="#contact-page">Contact</a>
         </div>
     </div>
 </div>
 
-<div id="skills-page" class="ali-jst-center flex-column color-theme-bg_0">
-    <div class="font-white padding" style="font-size: 50px;"><b>SKILLS</b></div>
-    <div style="display: flex; margin-bottom: 100px;">
-        <div id="layer-block">
-            <img src="https://uploaddeimagens.com.br/images/003/242/810/original/burger-png-hd-burger-sriracha-burger-png-1119.png"/>
+<div id="skills-page" class="center flex-column bg-grad-01">
+    <div class="font-white bold padding" style="font-size: 50px;">SKILLS</div>
+
+    <div class="font-white pdd-bottom" style="font-size: 30px;">Web Developer</div>
+    <div id="skill-container">
+        <div class="center-start flex-column" style="row-gap: 1rem;">
+            <div class="font-white bold pdd-bottom" style="font-size: 1.5rem;">
+                Front End
+            </div>
+            <div id="skill-content">
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"/>
+                    <div class="font-white pdd-bottom">JavaScript</div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_168875.png"/>
+                    <div class="font-white pdd-bottom">React</div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/redux-icon.svg"/>
+                    <div class="font-white pdd-bottom">Redux</div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/768px-HTML5_Badge.svg.png"/>
+                    <div class="font-white pdd-bottom">HTML5</div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/768px-CSS3_logo.svg.png"/>
+                    <div class="font-white pdd-bottom">CSS3</div>
+                </div>
+            </div>
         </div>
-        <div id="vertical-space"></div>
-        <div id="layer-block">
-            <div class="font-white" style="font-size: 25px;">"Apps are like burgers. They've got layers." - Shrek <span style="font-size: 15px;">(rumored)</span> </div>
-            <div class="font-white padding-top" style="font-size: 15px;">Select a layer on the burger to show stack skills</div>
+        <div class="center-start flex-column" style="row-gap: 1rem;">
+            <div class="font-white bold pdd-bottom" style="font-size: 1.5rem;">
+                Tools
+            </div>
+            <div id="skill-content">
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Git_Icon.svg/185px-Git_Icon.svg.png"/>
+                    <div class="font-white pdd-bottom">Git</div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src=""/>
+                    <div class="font-white pdd-bottom"></div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src=""/>
+                    <div class="font-white pdd-bottom"></div>
+                </div>
+            </div>
+        </div>
+        <div class="center-start flex-column" style="row-gap: 1rem;">
+            <div class="font-white bold pdd-bottom" style="font-size: 1.5rem;">
+                Back End
+            </div>
+            <div id="skill-content">
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src=""/>
+                    <div class="font-white pdd-bottom"></div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src=""/>
+                    <div class="font-white pdd-bottom"></div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src=""/>
+                    <div class="font-white pdd-bottom"></div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="font-white pdd-bottom" style="font-size: 30px; padding-top: 3rem;">3D Generalist</div>
+    <div id="skill-container">
+        <div class="center-start flex-column" style="row-gap: 1rem;">
+            <div class="font-white bold pdd-bottom" style="font-size: 1.5rem;">
+                Modeling
+            </div>
+            <div id="skill-content" style="grid-template-columns: 1fr 1fr;">
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maya_icon_130395.png"/>
+                    <div class="font-white pdd-bottom">Autodesk Maya</div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://logodix.com/logo/1890553.png"/>
+                    <div class="font-white pdd-bottom">ZBrush</div>
+                </div>
+            </div>
+        </div>
+        <div class="center-start flex-column" style="row-gap: 1rem;">
+            <div class="font-white bold pdd-bottom" style="font-size: 1.5rem;">
+                Texturing
+            </div>
+            <div id="skill-content" style="grid-template-columns: 1fr 1fr;">
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://cdn.worldvectorlogo.com/logos/substance-painter.svg"/>
+                    <div class="font-white pdd-bottom">Substance Painter</div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://logodownload.org/wp-content/uploads/2019/10/adobe-photoshop-logo-0.png"/>
+                    <div class="font-white pdd-bottom">Photoshop</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div style="width: 0.1rem; height: 70%; background-color: #ffffff; margin-right: 5rem;"></div>
+            <a type="submit"class="center" href="https://www.artstation.com/kvntakara" rel="noopener noreferrer" target="_blank">
+                <img id="skill-icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Artstation_logo_logos-512.png"/>
+                <div>
+                    My ArtStation<br>Portfolio
+                </div>
+            </a>
+        </div>
+    
+        <!--
+        <div class="center-start flex-column" style="row-gap: 1rem;">
+            <div class="font-white bold pdd-bottom" style="font-size: 1.5rem;">
+                Engines
+            </div>
+            <div id="skill-content" style="grid-template-columns: 1fr 1fr;">
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://seeklogo.com/images/U/unity-logo-988A22E703-seeklogo.com.png"/>
+                    <div class="font-white pdd-bottom">Unity</div>
+                </div>
+                <div class="center-start flex-column">
+                    <img id="skill-icon" src="https://cdn.icon-icons.com/icons2/2389/PNG/512/unreal_engine_logo_icon_144771.png"/>
+                    <div class="font-white pdd-bottom">Unreal</div>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+
+    <a href="#front-page"><i class="fa-solid fa-angle-up fa-xl margin" style="color: #ffffff;"></i></a>
 </div>
 
-<div id="project-page" class="ali-center-jst-start flex-column background-gray">
-    <div class="color-theme-bg-cut-1_0"></div>
-    <div class="padding" style="font-size: 50px;"><b>PROJECTS</b></div>
-    <div style="display: flex; width: 60vw; margin-bottom: 100px;">
-        <div style="width: 30vw;">
-            <h1>DnD - Honor Among Thieves</h1>
-            <div class="padding-top" style="display: flex; flex-wrap: wrap; text-align: left;">
+<div id="project-page" class="center-start flex-column bg-gray">
+    <div class="bg-cut-grad-01"></div>
+    <div class="bold padding" style="font-size: 50px;">PROJECTS</div>
+    <div class="start-center" style="max-width: 100rem; margin-bottom: 100px; column-gap: 3rem;">
+        <div style="width: 30%;">
+            <h1 class="font-theme">DnD - Honor Among Thieves</h1>
+            <div class="bold pdd-top" style="display: flex; flex-wrap: wrap; text-align: left;">
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">HTML</div>
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">CSS</div>
             </div>
-            <p class="padding-top">
-                The website is a platform dedicated to ticket sales for the movie "Dungeons and Dragons: Honor Among Thieves," created for learning purposes. Here, you will find a variety of information about the film, including details about the plot, cast, and technical crew.</p>
-            <div class="padding-top">
-                <a id="ancor-border" class="pointer" style="font-size: 20px;" href="https://mynamekevin.com/DnD_HTML/index.html" rel="noopener noreferrer" target="_blank">See Live</a>
-                <a id="ancor-border" class="pointer" style="font-size: 20px;" href="">Source Code</a>
+            <p class="font-theme pdd-top"> <b>Solo Project</b> <i></i> </p>
+            <p class="pdd-top" style="line-height: 1.7rem;">
+                A website dedicated to ticket sales for the movie "Dungeons and Dragons: Honor Among Thieves," created for learning purposes. Here, you will find a variety of information about the film, including details about the plot, cast, and technical crew.</p>
+            <div class="pdd-top">
+                <a id="ancor-border" style="font-size: 1.2rem;" href="https://mynamekevin.com/DnD_HTML/index.html" rel="noopener noreferrer" target="_blank">See Live</a>
+                <a id="ancor-border" style="font-size: 1.2rem;" href="https://github.com/KvnTakara/DnD_HTML" rel="noopener noreferrer" target="_blank">Source Code</a>
             </div>
         </div>
-        <div id="vertical-space"></div>
-        <div id="vertical-space"></div>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/TUihbuaBN_E" title="Ranking League of Legends champions based on how hot I think they are" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="box-shadow" width="640" src="./midia/dnd_screenshot.jpg"/>
     </div>
 
-    <div style="display: flex; width: 60vw; margin-bottom: 100px;">
-        <div style="width: 30vw;">
-            <h1>Petbook</h1>
-            <div class="padding-top" style="display: flex; flex-wrap: wrap; text-align: left;">
+    <div class="start-center" style="width: 75%; margin-bottom: 100px; column-gap: 3rem;">
+        <div style="width: 30%;">
+            <h1 class="font-theme">Petbook</h1>
+            <div class="bold pdd-top" style="display: flex; flex-wrap: wrap; text-align: left;">
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">HTML</div>
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">CSS</div>
             </div>
-            <p class="padding-top">
-                Petbook is an interactive platform that connects pop culture pets worldwide. Inspired by the format of Facebook, this front-end clone website was created for educational purposes and redirected to meet the fictional needs of the pet community.</p>
-            <div class="padding-top">
-                <a id="ancor-border" class="pointer" style="font-size: 20px;" href="https://mynamekevin.com/Petbook_HTML/index.html" rel="noopener noreferrer" target="_blank">See Live</a>
-                <a id="ancor-border" class="pointer" style="font-size: 20px;" href="">Source Code</a>
+            <p class="font-theme pdd-top"> <b>Solo Project</b> <i></i> </p>
+            <p class="pdd-top" style="line-height: 1.7rem;">
+                Petbook is an interactive platform that connects pop culture pets worldwide. Inspired by the format of Facebook, this front-end clone website was created for educational purposes and redirected to meet the needs of this fictional pet community.</p>
+            <div class="pdd-top">
+                <a id="ancor-border" href="https://mynamekevin.com/Petbook_HTML/index.html" rel="noopener noreferrer" target="_blank">See Live</a>
+                <a id="ancor-border" href="" rel="noopener noreferrer" target="_blank">Source Code</a>
             </div>
         </div>
-        <div id="vertical-space"></div>
-        <div id="vertical-space"></div>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/TUihbuaBN_E" title="Ranking League of Legends champions based on how hot I think they are" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="box-shadow" width="640" src="./midia/petbook_screenshot.jpg"/>
     </div>
 
-    <div style="display: flex; width: 60vw; margin-bottom: 100px;">
-        <div style="width: 30vw;">
-            <h1>JavaScript Jobs USA</h1>
-            <div class="padding-top" style="display: flex; flex-wrap: wrap; text-align: left;">
+    <!--
+    <div class="start-center" style="width: 75%; column-gap: 3rem;">
+        <div style="width: 30%;">
+            <h1 class="font-theme">JavaScript Jobs USA</h1>
+            <div class="bold pdd-top" style="display: flex; flex-wrap: wrap; text-align: left;">
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">PWA</div>
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">React</div>
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">Redux</div>
@@ -101,52 +224,52 @@
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">Adzuna API</div>
                 <div id="boxed-border" style="margin-right: 5px; margin-bottom: 5px;">Google Places API</div>
             </div>
-            <p class="padding-top"> <b>Collaborators:</b> <i>Agnes Urbaityte, Peter Boustani</i> </p>
-            <p class="padding-top">An interactive, real-time job search tool to find jobs for JavaScript developers by location. Custom search in any US state to apply to hundreds of jobs plotted to the map in multiple view modes.</p>
-            <p class="padding-top"> <i>Note: App hosted on free Heroku server. Please allow 15-30s to spin up. We have limited Adzuna API queries. If app causes 500 error, please select state: California; filter: Javascript, to explore app with cached dummy data.</i> </p>
-            <div class="padding-top">
-                <a id="ancor-border" class="pointer" style="font-size: 20px;" href="">See Live</a>
-                <a id="ancor-border" class="pointer" style="font-size: 20px;" href="">Source Code</a>
+            <p class="font-theme pdd-top"> <b>Collaborators:</b> <i>Agnes Urbaityte, Peter Boustani</i> </p>
+            <p class="pdd-top">An interactive, real-time job search tool to find jobs for JavaScript developers by location. Custom search in any US state to apply to hundreds of jobs plotted to the map in multiple view modes.</p>
+            <p class="pdd-top"> <i>Note: App hosted on free Heroku server. Please allow 15-30s to spin up. We have limited Adzuna API queries. If app causes 500 error, please select state: California; filter: Javascript, to explore app with cached dummy data.</i> </p>
+            <div class="pdd-top">
+                <a id="ancor-border" href="" rel="noopener noreferrer" target="_blank">See Live</a>
+                <a id="ancor-border" href="" rel="noopener noreferrer" target="_blank">Source Code</a>
             </div>
         </div>
-        <div id="vertical-space"></div>
-        <div id="vertical-space"></div>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/TUihbuaBN_E" title="Ranking League of Legends champions based on how hot I think they are" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="box-shadow" width="640" height="360" src="https://www.youtube.com/embed/TUihbuaBN_E" title="Ranking League of Legends champions based on how hot I think they are" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+    -->
+    
+    <a href="#front-page"><i class="fa-solid fa-angle-up fa-xl margin" style="color: #00cdac;"></i></a>
 </div>
 
-<div id="about-page" class="ali-center-jst-start flex-column color-theme-bg_0">
-    <div class="color-theme-bg-cut-2_0"></div>
-    <div class="font-white padding" style="font-size: 50px;"><b>ABOUT</b></div>
-    <div class="ali-center-jst-start">
-        <div id="layer-block2">
-            <img src="https://www.danny-berger.dev/static/bdcff8ed8dccc64bedda8bbbcd8f9f70/105c3/Mohawk1.png">
+<div id="about-page" class="center-start flex-column bg-grad-01">
+    <div class="bg-cut-grad-02"></div>
+    <div class="font-white bold padding" style="font-size: 50px;">ABOUT</div>
+    <div class="center" style="column-gap: 3rem;">
+        <div id="about-block">
+            <img src="">
         </div>
-        <div id="layer-block2" class="ali-center-jst-start flex-column">
+        <div id="about-block" class="center-start flex-column">
             <div id="about-box" class="font-white" style="font-size: 20px;">
                 <p style="margin-bottom: 20px;">3D designer who values creativity and proactivity, specialized in polygonal modeling of characters and optimized environments for games.</p>
                 <p style="margin-bottom: 20px;">In 2023, I started my studies and became proficient in Front-end development for the Web. Quickly integrating new concepts, bringing ambitious ideas, and a positive attitude to every challenge.</p>
                 <p style="margin-bottom: 20px;">Capable of working on different types of projects and teams, with the goal of creating high-quality games.</p>
             </div>
-            <a type="submit" id="ancor-border-2" class="pointer" style="font-size: 20px;" href="https://drive.google.com/file/d/1LxZAmzHHAl9aYQypLv8qgyMkn-GT5fE1/view?usp=sharing" rel="noopener noreferrer" target="_blank">Resume</a>
+            <a type="submit" id="ancor-border-2" href="https://drive.google.com/file/d/1LxZAmzHHAl9aYQypLv8qgyMkn-GT5fE1/view?usp=sharing" rel="noopener noreferrer" target="_blank">Resume</a>
         </div>
     </div>
+    <a href="#front-page"><i class="fa-solid fa-angle-up fa-xl margin" style="color: #ffffff;"></i></a>
 </div>
 
-<div id="contact-page" class="ali-center-jst-start flex-column background-gray">
-    <div class="color-theme-bg-cut-1_0"></div>
-    <div class="padding" style="font-size: 50px;"><b>CONTACT</b></div>
-    <input type="text" id="input" placeholder="Name"/>
-    <input type="email" id="input" placeholder="Email"/>
-    <textarea required name="message" rows="8" id="input" placeholder="Message"></textarea>
-    <div id="horizontal-space"></div>
-    <div id="horizontal-space"></div>
-    <button type="submit" id="ancor-border" class="pointer" style="font-size: 25px; margin-bottom: 140px;" href="#skills-page">Send</button>
+<div id="contact-page" class="center-start flex-column bg-gray" style="row-gap: 1rem;">
+    <div class="bg-cut-grad-01"></div>
+    <div class="bold padding" style="font-size: 50px;">CONTACT</div>
+    <input id="input" style="border-color: rgba(0, 0, 0, 0.3);border-radius: 0.2rem;" type="text" placeholder="Name"/>
+    <input id="input" style="border-color: rgba(0, 0, 0, 0.3);border-radius: 0.2rem;" type="email" placeholder="Email"/>
+    <textarea id="input" style="border-color: rgba(0, 0, 0, 0.3);border-radius: 0.2rem;" required name="message" rows="8" placeholder="Message"></textarea>
+    <button type="submit" id="ancor-border" style="margin: 30px 0 100px 0;" href="#skills-page">Send</button>
 </div>
 
-<div id="bottom-nav-page" class="color-theme-bg_1 ali-jst-center flex-column" style="row-gap: 30px;">
+<div id="bottom-nav-page" class="bg-grad-02 center flex-column" style="row-gap: 30px;">
     <a href="#front-page"><i class="fa-solid fa-angle-up fa-xl" style="color: #ffffff;"></i></a>
-    <nav class="ali-jst-center">
+    <nav class="center">
         <a id="logo" href="https://www.linkedin.com/in/kevin-eiki-takara/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl pointer" style="color: #ffffff;"></i></a>
         <a id="logo" href="https://github.com/KvnTakara" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github fa-2xl pointer" style="color: #ffffff;"></i></a>
         <a id="logo" href="" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-youtube fa-2xl pointer" style="color: #ffffff;"></i></a>

@@ -2,13 +2,14 @@
 /*font-family: 'Darumadrop One', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 /*font-family: 'Roboto Mono', monospace;*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap);
+/*font-family: Montserrat,sans-serif;*/
 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    border: transparent;
     outline: none;
 }
 
@@ -17,25 +18,43 @@ html {
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: Montserrat,sans-serif;
 }
 
-.ali-jst-center {
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.ali-center-jst-start {
+.center-start {
     display: flex;
     align-items: center;
     justify-content: start;
 }
 
-.ali-center-jst-end {
+.center-end {
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+.start-center {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.start-around {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
 }
 
 .flex-column {
@@ -43,41 +62,58 @@ body {
     flex-direction: column;
 }
 
+.grid-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .padding {
-    padding: 70px;
+    padding: 4rem;
 }
 
-.padding-top {
-    padding-top: 35px;
+.margin {
+    margin: 6rem;
 }
 
-.padding-right {
-    padding-right: 20px;
+.pdd-top {
+    padding-top: 2rem;
 }
 
-.color-theme-bg_0 {
+.pdd-bottom {
+    padding-bottom: 1.5rem;
+}
+
+.pdd-right {
+    padding-right: 1rem;
+}
+
+.bg-gray {
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-grad-01 {
     background-image: linear-gradient(to right, #01b1af, #00c6ac);
 }
 
-.color-theme-bg_1 {
+.bg-grad-02 {
     background-color: #333333;
 }
 
-.color-theme-bg-cut-1_0 {
+.bg-cut-grad-01 {
     position: relative;
-    background-image: linear-gradient(to bottom right, #01b1af , #00c6ac 50%, gray 50%);
+    background-image: linear-gradient(to bottom right, #01b1af , #00c6ac 50%, rgb(255, 255, 255) 50%);
     width: 100%;
-    height: 5vw;
+    height: 4rem;
 }
 
-.color-theme-bg-cut-2_0 {
+.bg-cut-grad-02 {
     position: relative;
-    background-image: linear-gradient(to top left, #00c6ac, #01b1af 50%, gray 50%);
+    background-image: linear-gradient(to top left, #00c6ac, #01b1af 50%, rgb(255, 255, 255) 50%);
     width: 100%;
-    height: 5vw;
+    height: 4rem;
 }
 
-.color-theme_0 {
+.font-theme {
     color: #00cdac;
 }
 
@@ -89,23 +125,16 @@ body {
     cursor: pointer;
 }
 
-.background-gray {
-    background-color: gray;
+.box-shadow {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.background-red {
-    background-color: red;
+.bold {
+    font-weight: bold;
 }
 
-.border {
-    border: 3px solid #00cdac;
-    padding: 5px 10px 5px 10px;
-}
-
-#header {
-    width: 100%;
-    position: fixed;
-    z-index: 10;
+.font-RobotoMono {
+    font-family: 'Roboto Mono', monospace;
 }
 
 #logo {
@@ -113,26 +142,26 @@ body {
 }
 
 #front-page {
-    width: 100%;
     height: 100vh;
 }
 
 #front-page-nav {
-    width: 65vw;
-    height: 15vw;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    row-gap: 30px;
+    row-gap: 2.5rem;
 }
 
 #ancor-border {
     color: #00cdac;
     border: 3px solid #00cdac;
-    padding: 5px 10px 5px 10px;
+    padding: 0.4rem 1.3rem 0.4rem 1.3rem;
     background-color: transparent;
     border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 #ancor-border:hover {
@@ -143,8 +172,12 @@ body {
 #ancor-border-2 {
     color: white;
     border: 3px solid white;
-    padding: 5px 10px 5px 10px;
+    padding: 0.4rem 1.3rem 0.4rem 1.3rem;
+    background-color: transparent;
     border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 #ancor-border-2:hover {
@@ -152,18 +185,25 @@ body {
     background-color: white;
 }
 
-#skills-page {
-    width: 100%;
-    height: 100%;
-    min-height: 70vh;
+#skills-page
+
+#skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8rem;
 }
 
-#layer-block {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    height: 300px;
-    background-position: 50% 20%;
+#skill-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+#skill-icon {
+    width: 4rem;
+    height: 4rem;
+    background-size: contain;
+    padding: 1rem;
 }
 
 #project-page {
@@ -179,17 +219,12 @@ body {
     border-radius: 2px;
 }
 
-#vertical-space {
-    width: 2vw;
-}
-
 #horizontal-space {
     height: 1vh;
 }
 
 #about-page {
-    width: 100%;
-    height: 100%;
+    padding-bottom: 5rem;
 }
 
 #about-box {
@@ -198,25 +233,21 @@ body {
     box-sizing: border-box;
 }
 
-#layer-block2 {
-    width: 30vw;
-    height: 500px;
+#about-block {
+    width: 30%;
 }
 
 #input {
-    max-width: 800px;
-    width: 100%;
-    margin-bottom: 1rem;
     border-radius: 1px;
     padding: 8px 12px;
     border-width: 1px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 45vw;
+    width: 45%;
+    font-family: Montserrat,sans-serif;
 }
 
 #bottom-nav-page {
-    width: 100%;
     height: 13vw;
 }
 
