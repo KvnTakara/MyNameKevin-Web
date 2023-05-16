@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./home.css" />
     <script src="https://kit.fontawesome.com/6172394bf5.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
     <script defer src="./home.js"></script>
     <title>Kevin Takara | Dev</title>
 </head>
@@ -242,9 +243,13 @@
 <div id="about-page" class="center-start flex-column bg-grad-01">
     <div class="bg-cut-grad-02"></div>
     <div class="font-white bold padding" style="font-size: 50px;">ABOUT</div>
-    <div class="center" style="column-gap: 3rem;">
+    <div class="center">
         <div id="about-block">
-            <img src="">
+            <model-viewer style="scale: 5;" src="./midia/isometric_land.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.36" shadow-softness="1" exposure="0.8" min-camera-orbit="auto 50deg 628.2m" camera-orbit="42.87deg 81.96deg 628.2m" field-of-view="30deg" max-camera-orbit="auto 99deg auto" auto-rotate min-field-of-view="30deg">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            </model-viewer>          
         </div>
         <div id="about-block" class="center-start flex-column">
             <div id="about-box" class="font-white" style="font-size: 20px;">
